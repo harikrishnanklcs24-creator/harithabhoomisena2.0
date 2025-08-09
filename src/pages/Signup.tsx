@@ -24,8 +24,8 @@ export default function Signup() {
       return;
     }
 
-    if (formData.aadhar.length !== 12) {
-      setError('Aadhar number must be 12 digits');
+    if (formData.aadhar.length !== 10) {
+      setError('Aadhar number must be 10 digits');
       return;
     }
 
@@ -104,7 +104,7 @@ export default function Signup() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Aadhar Number</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1">id Number</label>
             <div className="relative">
               <MapPin className="h-4 w-4 text-gray-400 absolute left-3 top-3" />
               <input
